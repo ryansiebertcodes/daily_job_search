@@ -61,6 +61,7 @@ def main():
                                 "type": "object",
                                 "properties": {
                                     "source": {"type": "string"},
+                                    "company": {"type": "string"},
                                     "location": {"type": "string"},
                                     "title": {"type": "string"},
                                     "percent_match": {"type": "number"},
@@ -69,6 +70,7 @@ def main():
                                 },
                                 "required": [
                                     "source",
+                                    "company",
                                     "location",
                                     "title",
                                     "percent_match",
@@ -92,6 +94,7 @@ def main():
     for job in jobs_list:
         print("-" * 40)
         print("Source: " + job["source"])
+        print("Company: " + job["company"])
         print("Location: " + job["location"])
         print("Title: " + job["title"])
         print("Percent Match: " + str(job["percent_match"]) + "%")

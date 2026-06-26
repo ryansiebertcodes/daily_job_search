@@ -1,10 +1,11 @@
 name: daily
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  # Can change the on push trigger for debugging project changes
+  # push:
+  #   branches: [ "main" ]
+  # pull_request:
+  #   branches: [ "main" ]
   schedule:
     - cron: '0 15 * * *'
 
