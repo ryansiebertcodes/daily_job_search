@@ -1,0 +1,24 @@
+       "json_schema": {
+            "name": "job_matches",
+            "description": "A list of extracted job objectgs",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "jobs": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "source": {"type": "string"},
+                                "location": {"type": "string"},
+                                "title": {"type": "string"},
+                                "percent_match": {"type": "number"},
+                                "requirements": {"type": "string"},
+                                "apply_link": {"type": "string"}                             }
+                            },
+                            "required": ["source", "location", "title", "percent_match", "requirements", "apply_link"]
+                        }
+                    }
+                },
+                "required": ["jobs"]
+            }

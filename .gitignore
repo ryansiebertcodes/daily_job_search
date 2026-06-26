@@ -1,0 +1,16 @@
+gitignorevenv/
+.env
+docs/MasterResume.docx
+sample_output.txt
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+
+# Mac
+.DS_Store
+
+# VSCode
+.vscode/
