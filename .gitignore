@@ -2,6 +2,7 @@ gitignorevenv/
 .env
 docs/MasterResume.docx
 sample_output.txt
+MasterResumePlainText.txt
 
 # Python
 __pycache__/

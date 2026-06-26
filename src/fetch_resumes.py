@@ -5,10 +5,11 @@ import os
 
 
 def get_resume():
+    resume_env = os.getenv("RESUME_TEXT")
+    if resume_env:
+        return resume_env
     doc = Document("docs/MasterResume.docx")
-    # doc.save("docs/MasterResume.docx")
     full_text = "\n".join([p.text for p in doc.paragraphs])
-    # print(full_text)
     return full_text
 
 
